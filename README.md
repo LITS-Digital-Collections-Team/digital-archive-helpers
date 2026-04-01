@@ -9,7 +9,7 @@ Each tool lives in its own subdirectory with a detailed README.
 ## Internet Archive tools
 
 ### [ia-missing-item-checker](ia-missing-item-checker/)
-Finds Internet Archive identifiers present in a local metadata corpus (one or more CSVs) that are absent from a source list. Useful for identifying items that exist in a local metadata export but have not yet been uploaded to, or confirmed in, an IA collection.
+Finds Internet Archive identifiers present in a local metadata corpus (one or more CSVs exported via IA's Advanced Search) that are absent from a source list. Useful for identifying items that exist in a local metadata export but have not yet been uploaded to, or confirmed in, an IA collection.
 
 ### [ia-item-metadata-to-csv](ia-item-metadata-to-csv/)
 Searches Internet Archive using a Lucene query and exports the metadata of all matching items to a CSV. Configurable fields; defaults to `identifier`, `title`, `creator`, `date`, and `description`.

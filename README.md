@@ -12,13 +12,13 @@ Each tool lives in its own subdirectory with a detailed README.
 Finds Internet Archive identifiers present in a local metadata corpus (one or more CSVs exported via IA's Advanced Search) that are absent from a source list. Useful for identifying items that exist in a local metadata export but have not yet been uploaded to, or confirmed in, an IA collection.
 
 ### [ia-item-metadata-to-csv](ia-item-metadata-to-csv/)
-Searches Internet Archive using a Lucene query and exports the metadata of all matching items to a CSV. Configurable fields; defaults to `identifier`, `title`, `creator`, `date`, and `description`.
+Searches Internet Archive using a Lucene query and exports the metadata of all matching items to a CSV. Configurable fields; defaults to `identifier`, `title`, `creator`, `date`, and `description`. Useful for retrieving custom metadata fields not returned via normal Advanced Search.
 
 ### [ia-item-csv-lister](ia-item-csv-lister/)
 Reads a plain-text list of IA identifiers, fetches the file listing for each item via the IA API, and writes results to a CSV where each row is an item and each column is a file extension. Standard IA-generated files are automatically excluded.
 
 ### [ia-file-metadata-tool](ia-file-metadata-tool/)
-List, set metadata, download, or export `files.xml` for files within specific IA items. Supports filtering by filename pattern (regex) or file format. Operates on a single item or a batch list. Only files with `source="original"` are processed.
+List, set metadata, download, or export `files.xml` for individual files within specific IA items. Supports filtering by filename pattern (regex) or file format. Operates on a single item or a batch list. Only files with `source="original"` are processed.
 
 ### [ia-to-iiif-manifest-creator](ia-to-iiif-manifest-creator/)
 Generates a IIIF Presentation API 2.x Collection manifest JSON from a CSV of IA identifiers and item labels. Intended for uploading to GitHub and ingesting into a transcription platform such as [FromThePage](https://fromthepage.com).
